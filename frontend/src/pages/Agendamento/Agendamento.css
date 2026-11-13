@@ -1,0 +1,393 @@
+
+/* PÁGINA DE AGENDAMENTO */
+
+.agendamento-page {
+  min-height: 75vh;
+  padding: 55px 6% 80px;
+  background: #f7eee5;
+}
+
+.agendamento-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.agendamento-title {
+  color: #542321;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  margin: 0 0 35px;
+  letter-spacing: -1.5px;
+}
+
+/* QUADRO PRINCIPAL */
+
+.agendamento-card {
+  padding: 42px 48px;
+  background: #fcf8f2;
+  border: 1px solid #ead9ca;
+  border-radius: 8px;
+}
+
+/* INFORMAÇÕES DA OFICINA */
+
+.oficina-resumo {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ead9ca;
+}
+
+.oficina-resumo h2 {
+  color: #542321;
+  font-family: "Playfair Display", serif;
+  font-size: 1.9rem;
+  margin: 0 0 12px;
+}
+
+.oficina-resumo p {
+  color: #786b61;
+  margin: 7px 0;
+}
+
+.oficina-local {
+  margin-top: 16px !important;
+}
+
+.oficina-preco {
+  color: #702528 !important;
+  margin-top: 12px !important;
+}
+
+/* FORMULÁRIO E ILUSTRAÇÃO */
+
+.agendamento-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 55px;
+  padding-top: 35px;
+}
+
+.agendamento-form {
+  display: grid;
+  gap: 23px;
+  width: 100%;
+  max-width: 540px;
+}
+
+.agendamento-label {
+  display: grid;
+  gap: 10px;
+  color: #542321;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* CAMPOS */
+
+.campo-data,
+.campo-horario {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 55px;
+  padding: 0 16px;
+  background: #fffdf9;
+  border: 1px solid #d9c6b6;
+  border-radius: 7px;
+}
+
+.campo-data input,
+.campo-horario select {
+  width: 100%;
+  min-width: 0;
+  padding: 13px 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #542321;
+  font-size: 1rem;
+}
+
+.campo-icone {
+  color: #a76c62;
+  font-size: 1.4rem;
+}
+
+.select-seta {
+  color: #702528;
+  font-size: 1.4rem;
+  pointer-events: none;
+}
+
+.campo-horario select {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* PARTICIPANTES */
+
+.participantes-controle {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  width: fit-content;
+  min-height: 52px;
+  padding: 5px 12px;
+  background: #fffdf9;
+  border: 1px solid #d9c6b6;
+  border-radius: 7px;
+}
+
+.participantes-botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background: #702528;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.participantes-botao:hover:not(:disabled) {
+  background: #913f3b;
+}
+
+.participantes-botao:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.participantes-valor {
+  min-width: 20px;
+  color: #542321;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* TOTAL E BOTÃO */
+
+.agendamento-total {
+  display: grid;
+  gap: 20px;
+  padding-top: 12px;
+}
+
+.agendamento-total h2 {
+  color: #542321;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.agendamento-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: fit-content;
+  min-height: 52px;
+  padding: 14px 26px;
+  border: none;
+  border-radius: 40px;
+  background: #702528;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.agendamento-button:hover {
+  background: #913f3b;
+}
+
+.agendamento-button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.agendamento-button span {
+  font-size: 1.2rem;
+}
+
+/* ILUSTRAÇÃO SVG */
+
+.agendamento-ilustracao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.agendamento-ilustracao img {
+  display: block;
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* MENSAGENS */
+
+.agendamento-mensagem,
+.confirmacao-aviso {
+  padding: 15px 18px;
+  border-radius: 7px;
+  background: #f0e5d9;
+  color: #542321;
+  line-height: 1.5;
+}
+
+.agendamento-mensagem a {
+  color: #702528;
+  font-weight: 700;
+}
+
+/* CONFIRMAÇÃO */
+
+.confirmacao-container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.confirmacao-container h1 {
+  color: #542321;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.confirmacao-card {
+  margin: 25px 0;
+  padding: 30px;
+  background: #fcf8f2;
+  border: 1px solid #ead9ca;
+  border-radius: 8px;
+}
+
+.confirmacao-card h2 {
+  color: #542321;
+  font-family: "Playfair Display", serif;
+  margin-top: 0;
+}
+
+.confirmacao-card p {
+  color: #786b61;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee3d9;
+}
+
+.confirmacao-card strong {
+  color: #542321;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+  .agendamento-page {
+    padding: 40px 5%;
+  }
+
+  .agendamento-card {
+    padding: 30px 24px;
+  }
+
+  .agendamento-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .agendamento-ilustracao {
+    order: -1;
+  }
+
+  .agendamento-ilustracao svg {
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 500px) {
+  .agendamento-title {
+    font-size: 2.6rem;
+  }
+
+  .agendamento-card {
+    padding: 25px 17px;
+  }
+
+  .oficina-resumo h2 {
+    font-size: 1.5rem;
+  }
+
+  .agendamento-total h2 {
+    font-size: 1.5rem;
+  }
+
+  .agendamento-button {
+    width: 100%;
+    padding: 14px 18px;
+  }
+}
+
+/* AJUSTES DO CALENDÁRIO */
+
+.campo-data {
+  position: relative;
+}
+
+.campo-data input {
+  padding-right: 45px;
+  cursor: pointer;
+}
+
+.campo-data input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  width: 45px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.calendario-icone {
+  position: absolute;
+  right: 17px;
+  width: 21px;
+  height: 21px;
+  color: #8d4947;
+  pointer-events: none;
+}
+
+/* AJUSTES DA SETA DO HORÁRIO */
+
+.campo-horario {
+  position: relative;
+}
+
+.campo-horario select {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  padding-right: 38px;
+  cursor: pointer;
+}
+
+.select-seta {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #702528;
+  border-bottom: 2px solid #702528;
+  transform: translateY(-70%) rotate(45deg);
+  pointer-events: none;
+}
