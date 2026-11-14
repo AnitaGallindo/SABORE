@@ -113,7 +113,7 @@ Configure o arquivo `.env` com as variáveis necessárias:
 ```env
 PORT=3000
 MONGODB_URI=sua_string_de_conexao
-JWT_SECRET=sua_chave_secreta
+JWT_SECRET=coloque_sua_chave_secreta_aqui
 ```
 
 Em seguida, execute:
